@@ -10,7 +10,7 @@
     <div class="col-md-4">
         <section>
             <form id="account" method="post">
-                <h4>Use a local account to log in.</h4>
+                <h4>@*Use a local account to log in.*@</h4>
                 <hr />
                 <div asp-validation-summary="All" class="text-danger"></div>
                 <div class="form-group">
@@ -48,8 +48,20 @@
             </form>
         </section>
     </div>
-    @*<div class="col-md-6 col-md-offset-2">
-        <section>
+    <div class="alert alert-info" role="alert" style="border-radius:16px; padding:10px; color:brown">
+        <h5>Registered users:</h5>
+        <hr />
+        <p>login: admin@admin.com</p>
+        <p>password: Admin123$</p>
+        <p>roles : Admin, User</p>
+        <br />
+        <p>login: writesd@outlook.com</p>
+        <p>password: Qwerty1!</p>
+        <p>roles : User</p>
+    </div>
+
+    <div class="col-md-6 col-md-offset-2">
+        @*<section>
             <h4>Use another service to log in.</h4>
             <hr />
             @{
@@ -76,8 +88,8 @@
                     </form>
                 }
             }
-        </section>
-    </div>*@
+        </section>*@
+    </div>
 </div>
 
 @section Scripts {
