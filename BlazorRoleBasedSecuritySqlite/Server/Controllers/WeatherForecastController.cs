@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BlazorRoleBasedSecuritySqlite.Server.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase

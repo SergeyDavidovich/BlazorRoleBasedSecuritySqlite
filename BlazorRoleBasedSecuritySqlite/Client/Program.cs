@@ -1,5 +1,6 @@
 // https://code-maze.com/using-roles-in-blazor-webassembly-hosted-applications/#supporting-multiple-roles
 
+using BlazorRoleBasedSecurity.Client;
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -26,7 +27,8 @@ namespace BlazorRoleBasedSecuritySqlite.Client
             // Supply HttpClient instances that include access tokens when making requests to the server project
             builder.Services.AddScoped(sp => sp.GetRequiredService<IHttpClientFactory>().CreateClient("BlazorRoleBasedSecuritySqlite.ServerAPI"));
 
-            builder.Services.AddApiAuthorization();
+            builder.Services.AddApiAuthorization()
+                .AddAccountClaimsPrincipalFactory<CustomUserFactory>();
 
             await builder.Build().RunAsync();
         }
