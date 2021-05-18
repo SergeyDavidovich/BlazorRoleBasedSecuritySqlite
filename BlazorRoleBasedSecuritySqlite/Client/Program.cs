@@ -1,3 +1,5 @@
+// https://code-maze.com/using-roles-in-blazor-webassembly-hosted-applications/#supporting-multiple-roles
+
 using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.Configuration;
