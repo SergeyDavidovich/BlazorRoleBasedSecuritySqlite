@@ -1,10 +1,17 @@
 ﻿@page "/"
-    Welcome to your new app.
+
+<h1>Welcome to your new app</h1>
+<hr style="background-color:#c200a0; height:1px;" />
+<h3>@DateTime.Now.ToShortDateString()</h3>
+<h3>@DateTime.Now.ToLongDateString()</h3>
+<h3>@DateTime.Now.ToUniversalTime()</h3>
+<hr style="background-color:#0082ff; height:1px;"  />
+
 <div>
     <input type="button" class="btn-primary" value="Unregistered" />
 
     <AuthorizeView Roles="Admin">
-        <input type="button" class="btn-info" value="Admin" />
+        <input type="button" class="btn-info " value="Admin" />
     </AuthorizeView>
 
     <AuthorizeView Roles="Admin, User">

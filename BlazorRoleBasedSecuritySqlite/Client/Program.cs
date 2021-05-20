@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
 namespace BlazorRoleBasedSecuritySqlite.Client
 {
@@ -18,6 +19,8 @@ namespace BlazorRoleBasedSecuritySqlite.Client
     {
         public static async Task Main(string[] args)
         {
+
+
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
@@ -29,6 +32,10 @@ namespace BlazorRoleBasedSecuritySqlite.Client
 
             builder.Services.AddApiAuthorization()
                 .AddAccountClaimsPrincipalFactory<CustomUserFactory>();
+
+            var culture = new CultureInfo("en-GB");
+            CultureInfo.DefaultThreadCurrentCulture = culture;
+            CultureInfo.DefaultThreadCurrentUICulture = culture;
 
             await builder.Build().RunAsync();
         }
