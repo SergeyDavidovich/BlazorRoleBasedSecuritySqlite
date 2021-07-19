@@ -29,4 +29,10 @@
     <Folder Include="Data\SQLite\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Data\SQLite\IdentityDB.sqlite">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -5,7 +5,18 @@
 <h3>@DateTime.Now.ToShortDateString()</h3>
 <h3>@DateTime.Now.ToLongDateString()</h3>
 <h3>@DateTime.Now.ToUniversalTime()</h3>
-<hr style="background-color:#0082ff; height:1px;"  />
+<hr style="background-color:#0082ff; height:1px;" />
+
+<h2>Claims</h2>
+<AuthorizeView>
+    <ul>
+        @foreach (var claim in context.User.Claims)
+        {
+            <li><b>@claim.Type</b>: @claim.Value</li>
+        }
+    </ul>
+</AuthorizeView>
+
 
 <div>
     <input type="button" class="btn-primary" value="Unregistered" />

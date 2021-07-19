@@ -8,15 +8,6 @@
 <h1>Weather forecast</h1>
 <p>This component demonstrates fetching data from the server.</p>
 
-<h2>Claims</h2>
-<AuthorizeView>
-    <ul>
-        @foreach (var claim in context.User.Claims)
-        {
-            <li><b>@claim.Type</b>: @claim.Value</li>
-        }
-    </ul>
-</AuthorizeView>
 
 
 @if (forecasts == null)
