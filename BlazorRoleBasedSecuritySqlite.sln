@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31229.75
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorRoleBasedSecuritySqlite.Server", "BlazorRoleBasedSecuritySqlite\Server\BlazorRoleBasedSecuritySqlite.Server.csproj", "{18D3556E-421C-423C-ACDC-205295227504}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorRoleBasedSecuritySqlite.Server", "BlazorRoleBasedSecuritySqlite\Server\BlazorRoleBasedSecuritySqlite.Server.csproj", "{18D3556E-421C-423C-ACDC-205295227504}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorRoleBasedSecuritySqlite.Client", "BlazorRoleBasedSecuritySqlite\Client\BlazorRoleBasedSecuritySqlite.Client.csproj", "{0CF2EAA8-F124-4D61-835C-597A460DF419}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorRoleBasedSecuritySqlite.Client", "BlazorRoleBasedSecuritySqlite\Client\BlazorRoleBasedSecuritySqlite.Client.csproj", "{0CF2EAA8-F124-4D61-835C-597A460DF419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorRoleBasedSecuritySqlite.Shared", "BlazorRoleBasedSecuritySqlite\Shared\BlazorRoleBasedSecuritySqlite.Shared.csproj", "{48412F06-ADFE-45C0-8876-9722678A15B3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorRoleBasedSecuritySqlite.Shared", "BlazorRoleBasedSecuritySqlite\Shared\BlazorRoleBasedSecuritySqlite.Shared.csproj", "{48412F06-ADFE-45C0-8876-9722678A15B3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{73C4B96B-0036-4FEC-B034-256825C7C254}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
