@@ -1,4 +1,5 @@
 ## BlazorRoleBasedSecuritySqlite
+Now for Net 5 only! 
 
 - Using roles in Blazor WebAssembly Hosted Applications (using SQLite)
 
