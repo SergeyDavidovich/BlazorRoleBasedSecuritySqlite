@@ -19,12 +19,11 @@ namespace BlazorRoleBasedSecuritySqlite.Client
     {
         public static async Task Main(string[] args)
         {
-
-
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
 
-            builder.Services.AddHttpClient("BlazorRoleBasedSecuritySqlite.ServerAPI", client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress))
+            builder.Services.AddHttpClient("BlazorRoleBasedSecuritySqlite.ServerAPI", 
+                client => client.BaseAddress = new Uri(builder.HostEnvironment.BaseAddress))
                 .AddHttpMessageHandler<BaseAddressAuthorizationMessageHandler>();
 
             // Supply HttpClient instances that include access tokens when making requests to the server project

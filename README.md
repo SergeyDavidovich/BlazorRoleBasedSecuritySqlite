@@ -7,16 +7,20 @@ Now for Net 5 only!
 https://code-maze.com/using-roles-in-blazor-webassembly-hosted-applications/#supporting-multiple-roles
 
 #
-<b><u>Registered users:</u></b>
+#### <b><u>Registered users:</u></b>
+-----
 
 - login: admin@admin.com
 
-password: Admin123$
+- password: Admin123$
 
-roles : Admin, User
+- roles : Admin, User
+ 
+#
 
 - login: writesd@outlook.com
 
-password: Qwerty1!
+- password: Qwerty1!
 
-roles : User
+- roles : User
+#
