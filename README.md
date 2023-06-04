@@ -1,5 +1,5 @@
 ## BlazorRoleBasedSecuritySqlite
-Now for Net 5 only! 
+### For Net 7 and IdentityServer 5.0 
 
 - Using roles in Blazor WebAssembly Hosted Applications (using SQLite)
 
